@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slide</title>
+</head>
+<body>
+    <button id="beauy">Button</button>
+    <div id="wiki">Two general theories exist on the origins of yoga. The linear model holds that yoga originated in the Vedic period, as reflected in the Vedic textual corpus, and influenced Buddhism; according to author Edward Fitzpatrick Crangle, this model is mainly supported by Hindu scholars. According to the synthesis model, yoga is a synthesis of non-Vedic and Vedic elements; this model is favoured in Western scholarship
+
+    </div> 
+
+    <form>
+        <label for="inp">Input text here:</label>
+        <input id="inp" type="text">
+        <textarea id="ta"  rows="5" cols="30">this is value my textarea></textarea> 
+    </form>
+    
+</body>
+<script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+
+                   // Slide method - Speed,Callback parameter is  function is optional//
+
+
+        // top to bottom// 
+        // two paramter (speed,callback)
+        // $('#wiki').slideDown(1000,function(){
+        //     console.log("done")
+        // })
+        // bottom to top hide element//
+        // $('#wiki').slideUp(1000,function(){
+        //     console.log("also done")
+        // })
+       // $('#wiki').slideToggle(1000)
+
+             // Animate function in JQuery//
+
+
+        
+        // $('#wiki').animate({
+        //     opacity:0.5,
+        //     height:'130px',
+        //     width:'350px'
+
+        // },"slow")  
+        
+        // $('#wiki').animate({opacity:0.3},4000);
+        // $('#wiki').animate({opacity:0.9},2000);
+        // $('#wiki').animate({width:'180vw'},12000);
+        // $('#wiki').stop()
+
+        // html dom element set and get //
+    //     $('body').html()
+    //     $('#ta').val()
+    // form value access //
+    //     $('#ta').val("comment in teaxarea")
+    //     // get the value
+    //     $('#ta').val()
+    //     $('#inp').val()
+    //     $('#inp').html()
+    //     $('#inp').html("input text here")
+    //     $('#inp').val()
+    //     $('#inp').html()
+    //     $('#inp').empty()
+    //     $('#wiki').empty()
+    //     // add text in content//
+    //    $('#wiki').text("you are good")
+    //    $('#wiki').remove()
+    //    $('#wiki').addClass('myclass')
+    //    $('#wiki').removeClass('myclass2')
+    //    $('#inp').empty()
+
+       // css add//
+
+    //    $('#wiki').css('background-color','red') 
+    //    // color access// 
+    //    $('#wiki').css('background-color')
+
+    // Ajex//
+    $.get("https://code.jquery.com/jquery-3.7.1.js")
+
+    $.get("https://code.jquery.com/jquery-3.7.1.js",function(data,status){alert(data)})
+
+    $.get("https://code.jquery.com/jquery-3.7.1.js",function(data,status){alert(status)})
+
+    // post method//
+
+    $.post("https://code.jquery.com/jquery-3.7.1.js",{name:'rohit',channel:'Information technology'},function(data,status){alert(status) });
+
+
+        
+        
+
+
+
+    })
+</script>
+</html>

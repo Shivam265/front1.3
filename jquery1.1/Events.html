@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events in jquery</title>
+    <style>
+        #wiki{
+            background-color: red;
+            border:2px solid black;
+            height: 40vh;
+            width: 50vw;
+        }
+    </style>
+</head>
+<body>
+    <p>this is a paragraph1</p>
+    <p id="second">this is a paragraph2</p>
+    <p>this is a paragraph3</p>
+    <p>this is a paragraph4</p>
+    <!--<button id="beauty">Toggle</button>-->
+    <button id="fadeOutBtn">fadeOut</button>
+    <button id="fadeInBtn">fadeIn</button>
+    <button id="fadeToggleBtn">fadeToggle</button>
+    <button id="fadeTo">fadeTo</button>
+    <div id="wiki">
+        Two general theories exist on the origins of yoga. The linear model holds that yoga originated in the Vedic period, as reflected in the Vedic textual corpus, and influenced Buddhism; according to author Edward Fitzpatrick Crangle, this model is mainly supported by Hindu scholars. According to the synthesis model, yoga is a synthesis of non-Vedic and Vedic elements; this model is favoured in Western scholarship
+    </div>
+    
+    
+</body>
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+
+
+                // Jquery Events//
+
+
+        /* Mouse events = click,dblclick,mouseenter,mouseleave
+        keyboardEvent = keypress,keydown,keyup,
+        
+        form events = submit,change,focus,blur
+        document/window = load ,resize,scroll,unload*/
+
+        /*$('p').dblclick(function(){
+            console.log("clicked on p",this)
+        })*/
+
+        /*$('p').mouseenter(function(){
+            console.log("you are enterd",this);
+        })*/
+
+        /*$('#second').mouseleave(function(){
+            alert("your mouse in out");
+        })*/
+
+        /*$('#second').mouseup(function(){
+            alert("mouseup huaa");
+        })*/
+
+        /*$('#second').hover(function(){
+            alert("mouse hover hua")
+        })*/
+
+        // Demoing the onmethod //
+        // $('#second').on({
+
+        // click:function (){
+        //     console.log('thanks for clicking',this);
+        // },
+
+        // mouseleave: function () { 
+        //     console.log("mouseleave");
+            
+        // }
+
+        // })
+
+                              // Hide and show  method //
+
+
+        // $('#wiki').show(2000,function(){
+            //console.log("show")
+
+        //})
+        
+        // $('#wiki').hide(3000,function(){
+        //     console.log("hide element")
+
+        // })
+
+        // Toggle method Shown elements are hidden and hidden elements are shown://
+
+        /*$('#beauty').click(function(){
+            $('#wiki').toggle(1000)
+
+        })*/
+
+                         //  Jquery Fade in method// 
+            
+        // fadeout btn show element two paramater(speed(3000),callback(,function()) after run function before complete work) //
+        // $('#fadeOutBtn').click(function(){
+        //     // fadeOut to parameter(speed(3000),callback(function())before complete task and after run)
+        //     $('#wiki').fadeOut("3000",function(){
+        //         console.log("Now it is hidden")
+        //     })
+        // })
+
+        // fadeIn button hide element//
+        // $('#fadeInBtn').click(function(){
+        //     $('#wiki').fadeIn("2000",function(){
+        //         console.log("Now it is show")
+        //     })
+
+        // })
+
+        // // fadeToggle method //
+        // $('#fadeToggleBtn').click(function(){
+        //     $('#wiki').fadeToggle("1000",function(){
+        //         console.log("it is show")
+
+        //     })
+        // })
+
+        // // fadeTo method used in show and hide both three parameter(speed,opacity,callback) //
+        // $('#fadeTo').click(function(){
+        //     $('#wiki').fadeTo('2000',0.5)
+        // })
+
+
+                 
+               
+
+
+
+
+
+
+
+
+
+
+
+
+        
+    })
+</script>
+</html>

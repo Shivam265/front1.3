@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecter in css </title>
+</head>
+<body>
+    <p>this my paragrapgh 1</p>
+    <p id="second">this my paragrapgh 2</p>
+    <p class="demo">this my paragrapgh 3</p>
+    <p>this my paragrapgh 4</p>
+    
+</body>
+
+<script src="jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        // Element Selecter//
+        $('p').click(function(){
+            console.log("clicked on p" ,this);
+        })
+        /*$('p').click()*/
+
+        // Id selecter//
+
+        /*$('#second').click(function(){
+            console.log("iam id selecter")
+        })
+
+        // class selector//
+        $('.demo').click(function(){
+            console.log("i am class selecter")
+        })*/
+
+        // other selecter//
+        // click on all the element//
+        //$('*').click();
+        //$('p.odd').click()
+
+        
+
+
+
+
+    })
+</script>
+</html>

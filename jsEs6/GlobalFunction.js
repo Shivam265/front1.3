@@ -1,0 +1,2 @@
+//console.log(isFinite(10))//isFinite() function used in number in return True in null value return {true} and string return false
+console.log(isNaN("A"))// isNan() function used in string value is return true and number value false 

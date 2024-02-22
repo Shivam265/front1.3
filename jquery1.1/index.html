@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>this is my click1</p>
+    <p>this is my click2</p>
+    <p>this is my click3</p>
+    <p>this is my click4</p>    
+</body>
+<script src="jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            // click on all p elements automatically //
+            /*$('p').click()*/
+            // click in user in p element//
+            $('p').click(function(){
+                console.log('you click me')
+                // hide p element//
+                /*$('p').hide();*/
+                /* click only one element hide click user */
+                //$(this).hide()//
+                $('#id').hide()
+                $('.class').hide()
+            })
+
+        })
+        </script>
+
+</html>
+
+
+
